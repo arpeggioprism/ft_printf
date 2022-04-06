@@ -10,7 +10,7 @@ all : $(NAME)
 $(NAME) : $(OBJS)
 	ar -rc $(NAME) $(OBJS) 
 
-%.o:%.c ft_printf.h
+%.o : %.c ft_printf.h
 	gcc $(CFLAGS) -o $@ -c $<
 
 clean :
