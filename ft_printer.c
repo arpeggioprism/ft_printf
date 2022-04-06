@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printer.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jshin <jshin@student.42seoul.kr>           +#+  +:+       +#+        */
+/*   By: jshin <jshin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 21:45:35 by jshin             #+#    #+#             */
-/*   Updated: 2022/04/06 20:33:43 by jshin            ###   ########seoul.kr  */
+/*   Updated: 2022/04/07 02:01:53 by jshin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	print_number(int nb)
 	len = 0;
 	if (n < 0)
 	{
-		len = write(1, "-", 1);
+		len += write(1, "-", 1);
 		n *= -1;
 	}
 	len += len_of_n(n);
